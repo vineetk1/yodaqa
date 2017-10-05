@@ -95,6 +95,18 @@
         </features>
       </typeDescription>
       <typeDescription>
+        <name>cz.brmlab.yodaqa.model.Question.Headword</name>
+        <description>Question Headword</description>
+        <supertypeName>uima.tcas.Annotation</supertypeName>
+        <features>
+          <featureDescription>
+            <name>base</name>
+            <description>The corresponding token.</description>
+            <rangeTypeName>de.tudarmstadt.ukp.dkpro.core.api.segmentation.type.Token</rangeTypeName>
+          </featureDescription>
+        </features>
+      </typeDescription>
+      <typeDescription>
         <name>cz.brmlab.yodaqa.model.Question.Focus</name>
         <description>Question Focus; e.g. in "What site did Lindbergh begin his flight from?", "site" is the focus.</description>
         <supertypeName>uima.tcas.Annotation</supertypeName>
