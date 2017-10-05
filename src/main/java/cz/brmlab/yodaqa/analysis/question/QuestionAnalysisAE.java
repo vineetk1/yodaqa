@@ -111,12 +111,14 @@ public class QuestionAnalysisAE /* XXX: extends AggregateBuilder ? */ {
 		/* Okay! Now, we can proceed with our key tasks. */
 
 		builder.add(AnalysisEngineFactory.createEngineDescription(FocusGenerator.class));
+		builder.add(AnalysisEngineFactory.createEngineDescription(HeadwordGenerator.class));
 		builder.add(AnalysisEngineFactory.createEngineDescription(FocusNameProxy.class));
 		builder.add(AnalysisEngineFactory.createEngineDescription(SubjectGenerator.class));
 		builder.add(AnalysisEngineFactory.createEngineDescription(SVGenerator.class));
 
 		/* Prepare LATs */
 		builder.add(AnalysisEngineFactory.createEngineDescription(LATByFocus.class));
+		builder.add(AnalysisEngineFactory.createEngineDescription(LATByHeadword.class));
 		builder.add(AnalysisEngineFactory.createEngineDescription(LATBySV.class));
 		/* Generalize imprecise LATs */
 		builder.add(AnalysisEngineFactory.createEngineDescription(LATByWordnet.class,
